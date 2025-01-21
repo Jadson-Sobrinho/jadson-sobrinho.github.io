@@ -302,10 +302,11 @@
     }
   
     #bio-container {
-      min-height: auto;
-      border-right: none;
-      border-bottom: 5px solid var(--bio-border-color);
-      padding: 50px 12px; /* Ajusta o espaçamento interno */
+      
+      position:relative;
+      top: 0px; /* Define a distância do topo quando o elemento se torna fixo */
+      height: 100vh; /* Garante que o conteúdo ocupe toda a altura da tela */
+      overflow-y: hidden; /* bloqueia rolagem interna*/
     }
   
     #bio-container h2 {
@@ -327,11 +328,19 @@
       text-align: center;
       padding: 20px;
     }
+
+    #title {
+      font-size: 22px;
+      margin-bottom: 15px;
+      font-weight: bold;
+      
+  }
   
     .description {
       margin: 10px auto;
       max-width: 100%;
       line-height: 26px;
+      text-align: justify;
       font-size: 16px; /* Reduz tamanho da fonte */
     }
   
@@ -343,7 +352,6 @@
     }
   
     #skills-container {
-      flex-direction: column; /* Adapta para exibição em coluna */
       align-items: center;   /* Centraliza os itens */
     }
   
@@ -356,6 +364,13 @@
   
     .skills-box i {
       font-size: 45px;
+    }
+
+    #portfolio-section-title {
+      padding-left: 0vh;
+      font-size: 40px;
+      border-top: 1px solid var(--border-color);
+      margin-top: 10px;
     }
   
     .carousel-container {
