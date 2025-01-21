@@ -45,6 +45,15 @@
   }
   
   /* Bio container */
+
+  #bio-container {
+    position: sticky;
+    top: 0; /* Define a distância do topo quando o elemento se torna fixo */
+    height: 100vh; /* Garante que o conteúdo ocupe toda a altura da tela */
+    overflow-y: auto; /* Adiciona rolagem interna, se necessário */
+}
+
+
   #bio-container h2 {
     margin-bottom: 25px;
   }
@@ -85,12 +94,14 @@
   
   #email-container {
     display: flex;
-    justify-content: center;
+    margin-right: 50px;
   }
   
   #email-container ion-icon,
   #email-container a {
     flex: 1 1 0;
+    justify-content: center;
+    padding-left: 10px;
   }
   
   #email-container a {
@@ -102,7 +113,7 @@
   #email-container ion-icon {
     color: var(--main-color);
     font-size: 20px;
-    margin-right: 5px;
+    margin-left: 25px;
     max-width: 20px;
   }
   
