@@ -50,7 +50,7 @@
     position: sticky;
     top: 0px; /* Define a distância do topo quando o elemento se torna fixo */
     height: 100vh; /* Garante que o conteúdo ocupe toda a altura da tela */
-    overflow-y: auto; /* Adiciona rolagem interna, se necessário */
+    overflow-y: hidden; /* bloqueia rolagem interna*/
 }
 
   #bio-container h2 {
