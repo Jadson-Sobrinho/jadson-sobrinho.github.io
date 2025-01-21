@@ -218,6 +218,7 @@
     font-weight: bold;
 
   }
+
   
   .soft-skills-title {
     font-size: 24px;
@@ -228,6 +229,72 @@
     border-left: 5px solid var(--main-color);
     
   }
+
+  #portfolio-section-title {
+    padding-left: 42%;
+    font-size: 50px;
+    border-top: 1px solid var(--border-color);
+    margin-top: 10px;
+  }
+
+  .carousel-container {
+    position: relative;
+    margin: 50px auto;
+    max-width: 90%;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  .carousel-title {
+    font-size: 32px;
+    color: var(--main-text-color);
+    margin-bottom: 20px;
+  }
+  
+  .carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .prev-button,
+  .next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+  }
+  
+  .prev-button {
+    left: 10px;
+  }
+  
+  .next-button {
+    right: 10px;
+  }
+  
+  .prev-button:hover,
+  .next-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+
+  
 
   /* Mobile */
   @media(max-width: 450px) {
