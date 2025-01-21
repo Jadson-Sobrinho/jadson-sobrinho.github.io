@@ -9,11 +9,11 @@
   /* Variables */
   :root {
     --main-color: #54B689;
-    --main-text-color: #FFF;
-    --border-color: #999;
-    --bio-bg-color: #1E2A3A;
+    --main-text-color: #d4d4d4;
+    --border-color: #c1bbbb;
+    --bio-bg-color: #132439;
     --bio-border-color: #293544;
-    --about-bg-color: #111821;
+    --about-bg-color: #050d17;
   }
   
   /* General */
@@ -33,7 +33,7 @@
     min-height: 100vh;
     background-color: var(--bio-bg-color);
     text-align: center;
-    padding: 30px 12px;
+    padding: 150px 12px;
     border-right: 5px solid var(--bio-border-color);
   }
   
@@ -48,22 +48,24 @@
 
   #bio-container {
     position: sticky;
-    top: 0; /* Define a distância do topo quando o elemento se torna fixo */
+    top: 0px; /* Define a distância do topo quando o elemento se torna fixo */
     height: 100vh; /* Garante que o conteúdo ocupe toda a altura da tela */
     overflow-y: auto; /* Adiciona rolagem interna, se necessário */
 }
 
-
   #bio-container h2 {
     margin-bottom: 25px;
+    
   }
   
   #bio-container p {
     margin-bottom: 20px;
+    font-size: 25px;
   }
   
-  #bio-container #welcome-text {
+  #bio-container #contact-text {
     font-weight: bold;
+    font-size: 20px;
   }
   
   #bio-image {
@@ -94,7 +96,8 @@
   
   #email-container {
     display: flex;
-    margin-right: 50px;
+    justify-content: center;
+    margin-right: 60px;
   }
   
   #email-container ion-icon,
@@ -124,7 +127,7 @@
   }
   
   #title {
-    font-size: 24px;
+    font-size: 26px;
     margin-bottom: 15px;
     font-weight: bold;
   }
@@ -132,8 +135,9 @@
   .description {
     max-width: 75%;
     margin-bottom: 10px;
+    font-size: 20px;
   }
-  
+
   #btn-projects {
     font-weight: bold;
     font-size: 16px;
@@ -175,12 +179,14 @@
     display: flex;
     flex-wrap: wrap;
     margin-top: 25px;
+    
   }
   
   .skills-box {
     flex: 1 1 33%;
     max-width: 33%;
     margin-bottom: 35px;
+    margin-right: 50px;
   }
   
   .skills-title {
@@ -195,7 +201,34 @@
     font-size: 45px;
     margin-right: 10px;
   }
+
+  .degree-list {
+    margin-left: 50px;
+  }
+
+  .degree-list li {
+    margin-top: 10px;
+  }
+
+  .soft-skills-box {
+    text-align: center;
+    padding: 5px 10px; /* Espaçamento interno */
+    color: var(--main-text-color); /* Cor do texto */
+    font-size: 16px; /* Ajuste de tamanho de texto */
+    font-weight: bold;
+
+  }
   
+  .soft-skills-title {
+    font-size: 24px;
+    margin-bottom: 25px;
+    font-weight: bold;
+    margin-right: 10px;
+    padding-left: 10px;
+    border-left: 5px solid var(--main-color);
+    
+  }
+
   /* Mobile */
   @media(max-width: 450px) {
   
