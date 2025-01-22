@@ -20,6 +20,7 @@
     scroll-behavior: smooth;
   }
 
+
   /* General */
   .highlight {
     color: var(--main-color);
@@ -60,16 +61,17 @@
   }
   
   #summary-container p.summary-container-title {
-    font-size: 20px;
+    font-size: 16px;
     margin-bottom: 10px;
     margin-right: 10px;
     padding-left: 10px;
   }
 
   #summary-container p#summary-title {
-    font-size: 24px;
+    font-size: 18px;
     margin-left: 30%;
     margin-top: 5%;
+    color: white;
     
   }
 
