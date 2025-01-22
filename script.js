@@ -1,4 +1,4 @@
-const carousels = document.querySelectorAll(".carousel-container");
+const carousels = document.querySelectorAll(".carousel-container, .certificate-carousel-container");
 
 carousels.forEach(container => {
   const carousel = container.querySelector(".carousel");
