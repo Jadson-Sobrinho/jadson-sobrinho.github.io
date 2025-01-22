@@ -33,7 +33,7 @@
     min-height: 100vh;
     background-color: var(--bio-bg-color);
     text-align: center;
-    padding: 150px 12px;
+    padding: 40px 12px;
     border-right: 5px solid var(--bio-border-color);
   }
   
@@ -43,7 +43,33 @@
     background-color: var(--about-bg-color);
     padding: 50px;
   }
+
+  #summary-container {
+    display: flex;
+    flex-wrap: wrap; /* Itens quebram linha se necessário */
+    align-items: center; /* Alinha os itens verticalmente */
+  }
   
+  #summary-container a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+  }
+  
+  #summary-container p.summary-container-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding-left: 10px;
+  }
+
+  #summary-container p#summary-title {
+    font-size: 24px;
+    margin-left: 30%;
+    margin-top: 5%;
+    
+  }
+
+  
+   
   /* Bio container */
 
   #bio-container {
@@ -168,7 +194,13 @@
     background-color: transparent;
   }
   
-  #skills-section-title {
+  #skills-section-title,
+  #degree-skills-section-title,
+  #job-skills-section-title,
+  #hard-skills-section-title,
+  #soft-skills-section-title,
+  #language-skills-section-title,
+  #certificate-carousel-title {
     border-top: 1px solid var(--border-color);
     padding-top: 20px;
     margin-bottom: 20px;
@@ -219,7 +251,6 @@
 
   }
 
-  
   .soft-skills-title {
     font-size: 24px;
     margin-bottom: 25px;
@@ -245,7 +276,8 @@
     text-align: center;
   }
 
-  .carousel-title {
+  .carousel-title,
+  .certificate-carousel-title {
     font-size: 32px;
     color: var(--main-text-color);
     margin-bottom: 20px;
@@ -324,6 +356,7 @@
     margin-left: 10%;
     text-align: justify;
     font-size: 22px;
+    margin-bottom: 5%;
     
   }
 
@@ -468,6 +501,7 @@
     margin-left: 10%;
     text-align: justify;
     font-size: 12px;
+    margin-bottom: 5%;
     
   }
 
