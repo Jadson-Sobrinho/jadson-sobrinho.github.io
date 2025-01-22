@@ -30,3 +30,42 @@ carousels.forEach(container => {
   // Exibe o primeiro slide ao carregar
   showSlide(currentIndex);
 });
+
+
+//about me
+const container = document.getElementById("carousel-container-about-me");
+
+if (container) {
+  const carousel = document.getElementById("carousel-about-me");
+  const items = carousel.querySelectorAll(".carousel-item-about-me");
+  let currentIndex = 0;
+  const slideInterval = 15000; // Tempo entre slides (em milissegundos)
+
+  // Função para exibir o slide com base no índice
+  function showSlide(index) {
+    const totalItems = items.length;
+
+    if (index >= totalItems) currentIndex = 0;
+    if (index < 0) currentIndex = totalItems - 1;
+
+    const offset = -currentIndex * 100;
+    carousel.style.transform = `translateX(${offset}%)`;
+  }
+
+  // Função para iniciar a transição automática
+  function startAutoSlide() {
+    return setInterval(() => {
+      currentIndex++;
+      showSlide(currentIndex);
+    }, slideInterval);
+  }
+
+  // Exibe o primeiro slide ao carregar
+  showSlide(currentIndex);
+
+  // Inicia o carrossel automático
+  startAutoSlide();
+
+
+}
+

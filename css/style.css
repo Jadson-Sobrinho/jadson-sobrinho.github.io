@@ -265,6 +265,13 @@
     width: 100%;
     border-radius: 10px;
   }
+
+  .carousel-item iframe {
+    border-radius: 5px;
+    width: 70%;
+    height: 550px;
+  }
+
   
   .prev-button,
   .next-button {
@@ -290,6 +297,66 @@
   
   .prev-button:hover,
   .next-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+
+  /*About me caroussel*/
+  #carousel-container-about-me {
+    position: relative;
+    margin: 50px auto;
+    max-width: 90%;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  #carousel-about-me {
+    display: flex;
+    transition: transform 1.0s ease-in-out;
+  }
+
+  .carousel-item-about-me {
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .carousel-item-about-me p {
+    margin-left: 10%;
+    text-align: justify;
+    font-size: 22px;
+    
+  }
+
+  .carousel-item-about-me img {
+    width: 50%;
+    border-radius: 10px;
+  }
+
+
+  #prev-button-about-me,
+  #next-button-about-me {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+  }
+  
+  #prev-button-about-me {
+    left: 10px;
+  }
+  
+  #next-button-about-me {
+    right: 10px;
+  }
+  
+  #prev-button-about-me:hover,
+  #next-button-about-me:hover {
     background-color: rgba(0, 0, 0, 0.8);
   }
 
@@ -380,6 +447,12 @@
   
     .carousel-item img {
       border-radius: 5px;
+    }
+
+    .carousel-item iframe {
+      border-radius: 5px;
+      width: 70%;
+      height: 150px;
     }
   
   }
