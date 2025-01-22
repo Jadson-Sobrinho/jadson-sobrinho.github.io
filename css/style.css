@@ -519,24 +519,25 @@
     align-items: center;
     gap: 10px; /* Espaço uniforme entre os itens */
     justify-content: center; /* Centraliza os itens */
+    margin-top: 40px;
   }
   
   #summary-container a {
     text-decoration: none; /* Remove o sublinhado */
-    color: gray;
+    color: white;
   }
   
   #summary-container p.summary-container-title {
     width: 150px; /* Define uma largura fixa para todos os itens */
     text-align: center; /* Centraliza o texto */
-    font-size: 12px;
+    font-size: 16px;
     margin-bottom: 5px;
     padding: 5px;
     box-sizing: border-box; /* Inclui padding dentro da largura total */
   }
   
   #summary-container p#summary-title {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     text-align: center;
     width: 100%; /* Faz o título ocupar toda a largura do container */
