@@ -56,7 +56,7 @@
   
   #summary-container a {
     text-decoration: none; /* Remove o sublinhado dos links */
-    color: gray;
+    color: white;
   }
   
   #summary-container p.summary-container-title {
