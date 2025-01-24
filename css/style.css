@@ -52,42 +52,125 @@
     padding: 50px;
   }
 
-  #summary-container {
-    display: flex;
-    flex-wrap: wrap; /* Itens quebram linha se necessário */
-    align-items: center; /* Alinha os itens verticalmente */
-  }
-  
-  #summary-container a {
-    text-decoration: none; /* Remove o sublinhado dos links */
-    color: white;
-  }
-  
-  #summary-container p.summary-container-title {
-    font-size: 16px;
-    margin-bottom: 10px;
-    margin-right: 10px;
-    padding-left: 10px;
+
+
+  /* Configuração inicial do modal */
+  #openmodal_menu {
+    position: fixed;
+    top: 0;
+    left: -310px; /* Escondido fora da tela */
+    width: 20%; /* Largura do menu */
+    height: 100%;
+    background-color: #f4f4f4; /* Cor de fundo */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+    overflow-y: auto; /* Rolagem interna, se necessário */
+    z-index: 1000; /* Garante que fique acima de outros elementos */
+    transition: left 0.3s ease; /* Animação suave ao abrir/fechar */
   }
 
-  #summary-container p#summary-title {
-    font-size: 18px;
-    margin-left: 30%;
-    margin-top: 5%;
-    color: white;
-    
+  /* Mostrar o modal ao usar o ID como alvo */
+  #openmodal_menu:target {
+    left: 0; /* Move o menu para dentro da tela */
   }
 
-  
-   
-  /* Bio container */
+  /* Conteúdo do modal */
+  .modal-content_menu {
+    padding: 20px;
+    margin-top: 100px;
+  }
 
-  #bio-container {
-    position: sticky;
-    top: 0px; /* Define a distância do topo quando o elemento se torna fixo */
-    height: 100vh; /* Garante que o conteúdo ocupe toda a altura da tela */
-    overflow-y: hidden; /* bloqueia rolagem interna*/
+  /* Botão de fechar */
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #333;
+  }
+
+
+
+/* Links do menu */
+
+#summary-title_menu {
+  color: #050d17;
+  font-size: 20px;
+  font-weight: bold;
 }
+
+.summary-container-text {
+  margin: 15px 0;
+  font-size: 16px;
+  color: #333;
+  text-decoration: none;
+  display: block;
+}
+
+  .summary-container-text:hover {
+    color: #007BFF;
+  }
+
+  /* Ícone do menu */
+  #img_menu {
+    cursor: pointer;
+    width: 40px;
+  }
+
+    /* Links do menu */
+    .summary-container-text {
+      margin: 15px 0;
+      font-size: 16px;
+      color: #333;
+      text-decoration: none;
+      display: block;
+    }
+
+    .summary-container-text:hover {
+      color: #007BFF;
+    }
+
+    /* Ícone do menu */
+    #img_menu {
+      cursor: pointer;
+      width: 40px;
+      
+    }
+
+    .link-menu {
+      position: fixed;
+      top: 20px;
+      left: -40px; /* Parte inicial visível fora da tela */
+      z-index: 1001;
+      width: 60px; /* Largura total do menu */
+      height: 40px; /* Altura do menu */
+      overflow: hidden; /* Esconde partes excedentes */
+      transition: left 0.3s ease; /* Animação suave */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .link-menu:hover {
+      left: 0px; /* Move o menu para dentro da tela ao passar o mouse */
+    }
+    
+    .link-menu img {
+      width: 40px; /* Tamanho da imagem dentro do botão */
+      height: 40px;
+      border-radius: 10px;
+    }
+    
+
+
+    /* Bio container */
+
+    #bio-container {
+      position: sticky;
+      top: 0px; /* Define a distância do topo quando o elemento se torna fixo */
+      height: 100vh; /* Garante que o conteúdo ocupe toda a altura da tela */
+      overflow-y: hidden; /* bloqueia rolagem interna*/
+  }
 
   #bio-container h2 {
     margin-bottom: 25px;
@@ -597,40 +680,23 @@
     
   }
 
-  /*sumario*/
+  
 
-  #summary-container {
-    display: flex;
-    flex-wrap: wrap; /* Permite que os itens quebrem linha */
-    align-items: center;
-    gap: 10px; /* Espaço uniforme entre os itens */
-    justify-content: center; /* Centraliza os itens */
-    margin-top: 40px;
-  }
-  
-  #summary-container a {
-    text-decoration: none; /* Remove o sublinhado */
-    color: white;
-  }
-  
-  #summary-container p.summary-container-title {
-    width: 150px; /* Define uma largura fixa para todos os itens */
-    text-align: center; /* Centraliza o texto */
-    font-size: 16px;
-    margin-bottom: 5px;
-    padding: 5px;
-    box-sizing: border-box; /* Inclui padding dentro da largura total */
-  }
-  
-  #summary-container p#summary-title {
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-    width: 100%; /* Faz o título ocupar toda a largura do container */
-    margin: 10px 0;
+  /* Configuração inicial do modal */
+  #openmodal_menu {
+    position: fixed;
+    top: 0;
+    left: -300px; /* Escondido fora da tela */
+    width: 70%; /* Largura do menu */
+    height: 100%;
+    background-color: #f4f4f4; /* Cor de fundo */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+    overflow-y: auto; /* Rolagem interna, se necessário */
+    z-index: 1000; /* Garante que fique acima de outros elementos */
+    transition: left 0.3s ease; /* Animação suave ao abrir/fechar */
   }
 
-
+  
   /*Modal*/
   .modal-content {
     width: 350px;
