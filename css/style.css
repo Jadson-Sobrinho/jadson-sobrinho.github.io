@@ -564,7 +564,13 @@
 }
 
 .link-text a {
+  display: inline-block; /* Garante que o elemento respeite o padding */
+  cursor: pointer;
   color: white;
+  background-color:#54B689; /* Apenas para visualização */
+  padding: 10px 430px 10px 430px;  /* Define a área clicável */
+  text-decoration: none; /* Remove o sublinhado */
+  border-radius: 5px; /* Adiciona bordas arredondadas */
 }
 
 
@@ -709,6 +715,15 @@
     text-align: left;
   }
   
+  .link-text a {
+    display: inline-block; /* Garante que o elemento respeite o padding */
+    cursor: pointer;
+    color: white;
+    background-color:#54B689; /* Apenas para visualização */
+    padding: 10px 115px 10px 115px;  /* Define a área clicável */
+    text-decoration: none; /* Remove o sublinhado */
+    border-radius: 5px; /* Adiciona bordas arredondadas */
+  }
   
 
   }
